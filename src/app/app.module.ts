@@ -13,11 +13,11 @@ import { EtherscanButtonComponent } from './content/common/etherscan-button/ethe
 import { RoadmapComponent } from './content/roadmap/roadmap.component'
 import { RoadmapEntryComponent } from './content/common/roadmap-entry/roadmap-entry.component'
 import { FoundationComponent } from './content/foundation/foundation.component'
-import { FrogeTreesCardComponent } from './content/common/froge-trees-card/froge-trees-card.component'
 import { FrogeDividendsCardComponent } from './content/common/froge-dividends-card/froge-dividends-card.component'
 import { HttpClientModule } from '@angular/common/http'
 import { AppConfigService } from 'src/service/app-config.service'
 import { EtherService } from 'src/service/ether.service'
+import { FrogeCardComponent } from './content/common/froge-card/froge-card.component'
 
 @NgModule({
   declarations: [
@@ -26,7 +26,7 @@ import { EtherService } from 'src/service/ether.service'
     ContentComponent,
     FooterComponent,
     FrogeButtonComponent,
-    FrogeTreesCardComponent,
+    FrogeCardComponent,
     FrogeDividendsCardComponent,
     FrogexInfoComponent,
     UniswapButtonComponent,
