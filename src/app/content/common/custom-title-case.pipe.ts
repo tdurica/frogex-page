@@ -13,6 +13,7 @@ export class CustomTitleCasePipe implements PipeTransform {
       .replaceAll('Frogex', 'FrogeX')
       .replaceAll('Erc', 'ERC')
       .replaceAll('Usdt', 'USDT')
+      .replaceAll('Ecodefi', 'EcoDefi')
     return value
   }
 }
