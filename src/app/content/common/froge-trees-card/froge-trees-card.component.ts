@@ -8,6 +8,6 @@ import { Component, Input } from '@angular/core'
 export class FrogeTreesCardComponent {
   constructor () {}
 
-  number: string = '800'
+  number: string = '4500'
   description: string = 'Trees planted'
 }
