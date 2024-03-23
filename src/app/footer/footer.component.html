@@ -1,0 +1,82 @@
+<div class="box primary-text">
+  <div class="flex flex-col column saira-condensed-thin">
+    <div class="question">
+      <span>
+        {{ 'ready for the ' | uppercase }}
+        <span class="primary-green">{{ 'ecoDefi' | uppercase }}</span
+        >{{ ' Revolution?' | uppercase }}
+      </span>
+    </div>
+    <div class="cfa">
+      <span>{{ 'Join our community!' | uppercase }}</span>
+    </div>
+    <div class="buy">
+      <app-uniswap-button [small]="true"></app-uniswap-button>
+    </div>
+  </div>
+  <div class="flex flex-col column">
+    <div class="saira-condensed-thin small-title">
+      <span> {{ 'Partners' | uppercase }} </span>
+    </div>
+    <div class="partner-box">
+      <img
+        (click)="openOneTreePlanted()"
+        class="onetreeplanted"
+        src="../../assets/OneTreePlanted.png"
+        alt="Telegram"
+      />
+      <img
+        (click)="openRfus()"
+        class="rainforestus"
+        src="../../assets/RFUS.png"
+        alt="Telegram"
+      />
+    </div>
+  </div>
+
+  <div class="flex flex-col column">
+    <div class="saira-condensed-thin small-title">
+      <span> {{ 'Socials' | uppercase }} </span>
+    </div>
+    <div class="flex flex-row socials">
+      <div>
+        <img
+          id="telegram"
+          (click)="openTelegram()"
+          src="../../assets/telegram.png"
+          alt="Telegram"
+        />
+      </div>
+      <div>
+        <img
+          id="twitter"
+          class="white"
+          (click)="openTwitter()"
+          src="../../assets/twitter.png"
+          alt="X.com"
+        />
+      </div>
+    </div>
+    <div class="flex flex-row">
+      <div>
+        <img
+          id="reddit"
+          (click)="openReddit()"
+          src="../../assets/reddit.png"
+          alt="Reddit"
+        />
+      </div>
+      <div>
+        <img
+          id="instagram"
+          (click)="openInstagram()"
+          src="../../assets/instagram.png"
+          alt="Instagram"
+        />
+      </div>
+    </div>
+  </div>
+  <div class="flex flex-col column froge-mascot">
+    <img class="logo" src="../../assets/ff-white1200.png" alt="ecoDefi logo" />
+  </div>
+</div>

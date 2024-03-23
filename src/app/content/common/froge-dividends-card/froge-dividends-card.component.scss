@@ -1,0 +1,113 @@
+.card {
+  background-color: #90c63e;
+  border-radius: 5px;
+  transition: 0.3s;
+  padding: 10vh;
+  margin: 15vh;
+  line-height: 700%;
+}
+
+.number {
+  font-size: 180px;
+}
+
+.description {
+  margin-top: 10px;
+  font-size: 60px;
+}
+
+.dollar-value {
+  margin-top: 0px;
+}
+
+@media (min--moz-device-pixel-ratio: 1.5),
+  (-o-min-device-pixel-ratio: 3/2),
+  (-webkit-min-device-pixel-ratio: 1.5),
+  (min-device-pixel-ratio: 1.5),
+  (min-resolution: 144dpi),
+  (min-resolution: 1.5dppx) {
+  // retina rules
+  .card {
+    padding: 5vh;
+    margin: 5vh;
+    line-height: 350%;
+  }
+  .number {
+    font-size: 100px;
+  }
+  .description {
+    font-size: 30px;
+  }
+}
+
+// ipad pro
+@media only screen and (min-width: 1024px) and (max-height: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+  .card {
+    padding: 5vh;
+    margin: 5vh;
+    line-height: 350%;
+  }
+  .number {
+    font-size: 100px;
+  }
+  .description {
+    font-size: 30px;
+  }
+}
+
+// all other mobile devices
+@media (max-width: 900px) {
+  .card {
+    padding: 5vh;
+    margin: 5vh;
+    line-height: 350%;
+  }
+  .number {
+    font-size: 100px;
+  }
+  .description {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .card {
+    padding: 4vh;
+    margin: 4vh;
+    line-height: 300%;
+  }
+  .number {
+    font-size: 80px;
+  }
+  .description {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .card {
+    padding: 3vh;
+    margin: 3vh;
+    line-height: 250%;
+  }
+  .number {
+    font-size: 60px;
+  }
+  .description {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 350px) {
+  .card {
+    padding: 2vh;
+    margin: 2vh;
+    line-height: 250%;
+  }
+  .number {
+    font-size: 60px;
+  }
+  .description {
+    font-size: 15px;
+  }
+}

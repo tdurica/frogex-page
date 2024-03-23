@@ -1,0 +1,205 @@
+* {
+  box-sizing: border-box;
+}
+
+.box {
+  background-color: #181c27;
+}
+.column {
+  float: left;
+  width: 22%;
+  padding: 10px;
+  height: 300px;
+  margin-left: 10px;
+}
+
+.box:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.logo {
+  width: 100%;
+  margin-top: 10%;
+}
+
+.question {
+  font-size: 30px;
+}
+
+.cfa {
+  font-size: 20px;
+}
+
+.buy {
+  margin-top: 10%;
+}
+
+.small-title {
+  font-size: 20px;
+  color: white;
+  margin-top: 2%;
+  margin-left: 2%;
+}
+
+#instagram {
+  width: 40px;
+  margin: 10px;
+  color: white;
+}
+
+#instagram:hover {
+  cursor: pointer;
+}
+
+#twitter {
+  margin: 10px;
+  width: 40px;
+}
+
+#twitter:hover {
+  cursor: pointer;
+}
+
+#reddit {
+  margin: 10px;
+  width: 40px;
+}
+
+#reddit:hover {
+  cursor: pointer;
+}
+
+#telegram {
+  margin: 10px;
+  width: 40px;
+}
+
+#telegram:hover {
+  cursor: pointer;
+}
+
+.partner-box {
+  margin: 10px;
+}
+
+.onetreeplanted {
+  width: 80%;
+}
+
+.onetreeplanted:hover {
+  cursor: pointer;
+}
+
+.rainforestus {
+  width: 80%;
+  margin-left: 5px;
+}
+
+.rainforestus:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .column {
+    width: 40%;
+    padding: 10px;
+    height: 100%;
+    margin-left: 10px;
+  }
+  .onetreeplanted {
+    width: 40%;
+  }
+  .rainforestus {
+    width: 40%;
+  }
+  .buy {
+    font-size: 20px;
+    width: 40%;
+  }
+  .logo {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 900px) {
+  .question {
+    font-size: 20px;
+  }
+  .cfa {
+    font-size: 15px;
+  }
+  .small-title {
+    font-size: 15px;
+  }
+  .partner-box {
+    width: 120%;
+  }
+  .onetreeplanted {
+    width: 60%;
+  }
+  .rainforestus {
+    width: 60%;
+    margin-left: 1px;
+  }
+  #twitter {
+    width: 30px;
+  }
+  #instagram {
+    width: 30px;
+  }
+  #reddit {
+    width: 30px;
+  }
+  #telegram {
+    width: 30px;
+  }
+}
+
+.white {
+  filter: invert(100%);
+  -webkit-filter: invert(100%);
+}
+
+.logo {
+  transition: transform 0.3s ease-out;
+}
+
+.logo:active {
+  animation: explode 1s forwards;
+}
+
+@keyframes explode {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(2);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.froge-mascot:hover .img.explosion {
+  animation: explode 1s forwards;
+}
+
+@keyframes explode {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(2);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

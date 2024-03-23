@@ -1,0 +1,149 @@
+.box {
+  height: 100vh;
+  left: 0;
+  right: 0;
+  overflow: visible;
+  clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
+}
+
+.top-bar {
+  height: 80px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.box {
+  background-color: #181c27;
+}
+
+.primary-text {
+  position: absolute;
+  line-height: 120%;
+  font-size: 15vh;
+  padding: 20px;
+  left: 4%;
+  right: 50%;
+  top: 10%;
+  z-index: 0;
+}
+
+.froge-mascot {
+  position: absolute;
+  right: 5%;
+  width: 35%;
+  bottom: 5%;
+  object-fit: contain;
+  z-index: 1;
+}
+
+.img {
+  height: 100%;
+  width: 100%;
+  transition: width 0.3s ease-out, height 0.3s ease-out;
+}
+
+.img:active {
+  animation: explode 1s forwards;
+}
+
+@keyframes explode {
+  0% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+  }
+  50% {
+    transform: scale(2);
+    -webkit-transform: scale(2);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.froge-mascot:hover .img.explosion {
+  animation: explode 1s forwards;
+}
+
+.froge-mascot:hover .img {
+  width: 120%; /* Vergrößert die Breite um 20% */
+  height: 120%; /* Vergrößert die Höhe um 20% */
+}
+
+.img.explosion {
+  opacity: 0; /* Bild wird unsichtbar */
+}
+
+@keyframes explode {
+  0% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+  }
+  50% {
+    transform: scale(2);
+    -webkit-transform: scale(2);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .primary-text {
+    font-size: 9vh;
+    width: 70%;
+  }
+  .froge-mascot {
+    width: 65%;
+    right: 0%;
+  }
+}
+
+@media (max-width: 1470px) {
+  .primary-text {
+    font-size: 11vh;
+  }
+  .froge-mascot {
+    width: 40%;
+    bottom: 0%;
+    right: 0%;
+  }
+}
+
+@media (max-width: 1020px) {
+  .primary-text {
+    font-size: 11vh;
+  }
+  .froge-mascot {
+    width: 40%;
+    right: 0%;
+  }
+}
+
+@media (max-width: 600px) {
+  .primary-text {
+    width: 70%;
+  }
+}
+
+@media (max-width: 430px) {
+  .primary-text {
+    font-size: 9vh;
+  }
+  .froge-mascot {
+    width: 65%;
+    right: 0%;
+    bottom: -2%;
+  }
+
+  .top-bar {
+    align-self: flex-start;
+    padding: 0 20px;
+  }
+}

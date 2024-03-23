@@ -1,0 +1,58 @@
+<div class="primary-text flex flex-col items-center card">
+  <div class="title saira-condensed-semibold">{{ title | uppercase }}</div>
+  <div class="roadmap-box saira-condensed-thin text-center">
+    <div class="margin-left-40 first">
+      <app-roadmap-entry
+        [text]="
+          'Stage 1 (Done):
+          Migrating all froge
+          holders to frogeX
+          establishing Foundation'
+        "
+      >
+      </app-roadmap-entry>
+    </div>
+    <div class="margin-right-40 second">
+      <app-roadmap-entry
+        [left]="true"
+        [text]="
+          'Stage 2 (partially done):
+1.000 Trees planted
+5.000 holders
+1 Million Market Cap'
+        "
+      ></app-roadmap-entry>
+    </div>
+    <div class="margin-left-40 third">
+      <app-roadmap-entry
+        [text]="
+          'Stage 3:
+          Listings
+          More Trees
+          More holders
+          Higher Market Cap'
+        "
+      >
+      </app-roadmap-entry>
+    </div>
+    <div class="margin-right-40 fourth">
+      <app-roadmap-entry
+        [left]="true"
+        [text]="'Stage 4:
+Expansion of the
+Froge ecosystem'"
+      ></app-roadmap-entry>
+    </div>
+    <div class="margin-left-40 fifth">
+      <app-roadmap-entry
+        [text]="
+          'Stage X:
+          making the world a better place while having fun:
+          happy holders,
+          happy environment'
+        "
+      >
+      </app-roadmap-entry>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,447 @@
+.card {
+  background-color: #181c27;
+  border-radius: 5px;
+  transition: 0.3s;
+  padding: 10vh;
+  margin: 15vh;
+}
+
+.buttons {
+  margin-top: 10px;
+}
+
+.title {
+  font-size: 100px;
+}
+
+.address-box {
+  width: 90%;
+  border: 1px solid #eceaea;
+  border-radius: 10px;
+  margin: 10px;
+  word-wrap: break-word;
+  -webkit-touch-callout: none; /* Safari */
+  -webkit-user-select: none; /* Chrome */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
+}
+
+.address-box {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.address-box.clicked {
+  animation: enlarge 0.5s forwards;
+}
+
+@keyframes enlarge {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.addressFirst {
+  font-size: 30px;
+  margin-left: 10px;
+  margin-right: 0px;
+  display: inline-block;
+  word-wrap: break-word;
+}
+
+.addressSecond {
+  font-size: 30px;
+  margin-left: 0px;
+  margin-right: 5px;
+  display: inline-block;
+}
+
+.description {
+  margin: 10px;
+  font-size: 40px;
+  margin: 30px;
+  line-height: 100%;
+}
+
+.subtitle {
+  font-size: 40px;
+  margin: 10px;
+  line-height: 100%;
+}
+
+.extra-info {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.fact {
+  font-size: 70px;
+  margin: 10px;
+  line-height: 100%;
+  margin-bottom: 15px;
+}
+
+.tax-fact {
+  font-size: 70px;
+  margin-right: 0px;
+  margin-left: 10px;
+  line-height: 100%;
+}
+
+.percentage {
+  font-size: 40px;
+  margin-left: 0px;
+  line-height: 100%;
+}
+
+.margin-18px {
+  margin: 18px;
+}
+
+.filter-white {
+  display: inline-block;
+  margin: 5px;
+  margin-left: 15px;
+  margin-bottom: 15px;
+  width: 3%;
+  filter: brightness(0) invert(1);
+}
+
+.filter-white:hover {
+  filter: brightness(0) invert(0.8);
+  cursor: pointer;
+}
+
+.visuallyhidden {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+.copybutton {
+  background-color: #fff;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  opacity: 1;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  z-index: 9;
+  border-radius: 24px;
+}
+
+@media (min--moz-device-pixel-ratio: 1.5),
+  (-o-min-device-pixel-ratio: 3/2),
+  (-webkit-min-device-pixel-ratio: 1.5),
+  (min-device-pixel-ratio: 1.5),
+  (min-resolution: 144dpi),
+  (min-resolution: 1.5dppx) {
+  // retina rules
+  .card {
+    padding: 5vh;
+    margin: 5vh;
+    line-height: 350%;
+  }
+  .tax-fact {
+    font-size: 50px;
+  }
+
+  .fact {
+    font-size: 50px;
+  }
+
+  .percentage {
+    font-size: 30px;
+  }
+
+  .space {
+    margin-left: 10rem !important;
+  }
+
+  .addressFirst {
+    font-size: 25px;
+  }
+  .addressSecond {
+    font-size: 25px;
+  }
+
+  .title {
+    font-size: 70px;
+    margin: 10px;
+  }
+
+  .subtitle {
+    font-size: 30px;
+  }
+
+  .extra-info {
+    font-size: 25px;
+    line-height: 90%;
+  }
+
+  .description {
+    font-size: 35px;
+  }
+
+  .tax-div {
+    margin-top: 8px;
+  }
+}
+
+// ipad pro
+@media only screen and (min-width: 1024px) and (max-height: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+  .card {
+    padding: 5vh;
+    margin: 5vh;
+    line-height: 350%;
+  }
+  .tax-fact {
+    font-size: 70px;
+  }
+
+  .fact {
+    font-size: 55px;
+  }
+
+  .percentage {
+    font-size: 30px;
+  }
+
+  .space {
+    margin-left: 10rem !important;
+  }
+
+  .addressFirst {
+    font-size: 25px;
+  }
+  .addressSecond {
+    font-size: 25px;
+  }
+
+  .title {
+    font-size: 70px;
+    margin: 10px;
+  }
+
+  .subtitle {
+    font-size: 30px;
+  }
+
+  .extra-info {
+    font-size: 25px;
+    line-height: 90%;
+  }
+
+  .description {
+    font-size: 35px;
+  }
+
+  .tax-div {
+    margin-top: 8px;
+  }
+}
+
+// all mobile devices
+@media (max-width: 900px) {
+  .card {
+    padding: 5vh;
+    margin: 5vh;
+    line-height: 350%;
+  }
+  .tax-fact {
+    font-size: 50px;
+  }
+
+  .fact {
+    font-size: 50px;
+  }
+
+  .percentage {
+    font-size: 30px;
+  }
+
+  .space {
+    margin-left: 10rem !important;
+  }
+
+  .addressFirst {
+    font-size: 25px;
+  }
+  .addressSecond {
+    font-size: 25px;
+  }
+
+  .title {
+    font-size: 70px;
+    margin: 10px;
+  }
+
+  .subtitle {
+    font-size: 30px;
+  }
+
+  .extra-info {
+    font-size: 25px;
+    line-height: 90%;
+  }
+
+  .description {
+    font-size: 35px;
+  }
+
+  .tax-div {
+    margin-top: 8px;
+  }
+}
+
+@media (max-width: 700px) {
+  .tax-fact {
+    font-size: 40px;
+  }
+
+  .fact {
+    font-size: 40px;
+  }
+
+  .percentage {
+    font-size: 30px;
+  }
+
+  .space {
+    margin-left: 2.5rem !important;
+  }
+
+  .addressFirst {
+    font-size: 18px;
+  }
+  .addressSecond {
+    font-size: 18px;
+  }
+  .description {
+    font-size: 30px;
+  }
+  .filter-white {
+    margin-bottom: 10px;
+    width: 4%;
+  }
+}
+
+@media (max-width: 600px) {
+  .card {
+    padding: 4vh;
+    margin: 4vh;
+    line-height: 300%;
+  }
+
+  .title {
+    font-size: 60px;
+  }
+  .subtitle {
+    font-size: 25px;
+  }
+
+  .extra-info {
+    font-size: 20px;
+  }
+
+  .addressFirst {
+    font-size: 15px;
+  }
+  .addressSecond {
+    font-size: 15px;
+  }
+
+  .description {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 450px) {
+  .card {
+    padding: 3vh;
+    margin: 3vh;
+    line-height: 250%;
+  }
+  .title {
+    font-size: 50px;
+  }
+
+  .subtitle {
+    font-size: 20px;
+  }
+
+  .extra-info {
+    font-size: 15px;
+  }
+
+  .addressFirst {
+    font-size: 12px;
+  }
+  .addressSecond {
+    font-size: 12px;
+  }
+  .description {
+    margin-top: 5px;
+    font-size: 20px;
+  }
+
+  .filter-white {
+    margin-bottom: 5px;
+    margin-left: 10px;
+    width: 5%;
+  }
+}
+
+@media (max-width: 350px) {
+  .card {
+    padding: 2vh;
+    margin: 2vh;
+    line-height: 250%;
+  }
+  .title {
+    font-size: 50px;
+  }
+  .addressFirst {
+    font-size: 10px;
+  }
+  .addressSecond {
+    font-size: 10px;
+  }
+  .description {
+    font-size: 15px;
+  }
+  .tax-fact {
+    font-size: 30px;
+  }
+
+  .fact {
+    font-size: 30px;
+  }
+
+  .percentage {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 300px) {
+  .card {
+    padding: 2vh;
+    margin: 2vh;
+    line-height: 200%;
+  }
+  .title {
+    font-size: 40px;
+  }
+  .addressFirst {
+    font-size: 8px;
+  }
+  .addressSecond {
+    font-size: 8px;
+  }
+}

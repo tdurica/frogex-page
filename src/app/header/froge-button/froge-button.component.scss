@@ -1,0 +1,24 @@
+.button {
+  font-size: 25px;
+  margin: 4px 2px;
+}
+
+@media (max-width: 600px) {
+  .button {
+    font-size: 20px !important;
+  }
+  .span {
+    padding-bottom: 0.5rem !important;
+    padding-top: 0.5rem !important;
+  }
+}
+
+@media (max-width: 430px) {
+  .button {
+    font-size: 15px !important;
+  }
+  .span {
+    padding-bottom: 0.25rem !important;
+    padding-top: 0.25rem !important;
+  }
+}

@@ -1,0 +1,17 @@
+<div class="flex flex-col">
+  <div *ngIf="!left" class="flex flex-row saira-condensed-thin">
+    <div class="grow"></div>
+    <div class="text-right">{{ text | titlecase }}</div>
+  </div>
+  <div *ngIf="left" class="text flex flex-row saira-condensed-thin">
+    <div class="text-left">{{ text | titlecase }}</div>
+    <div class="grow"></div>
+  </div>
+
+  <div *ngIf="!left" class="froge-mascot">
+    <img class="img" src="../../../../assets/frogeRight.png" alt="Froge" />
+  </div>
+  <div *ngIf="left" class="froge-mascot">
+    <img class="img" src="../../../../assets/frogeLeft.png" alt="Froge" />
+  </div>
+</div>
