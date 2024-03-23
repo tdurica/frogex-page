@@ -17,7 +17,6 @@ export class FrogeDividendsCardComponent implements OnInit {
     this.etherService
       .xGetDivsGlobalTotalDist('0x5fA54fdDF1870C344DbFaBb37dFab8700Ec0Def1')
       .then(totalDividends => {
-        console.log(totalDividends)
         this.totalDividends = parseFloat(
           parseFloat(ethers.formatEther(totalDividends)).toFixed(3)
         )

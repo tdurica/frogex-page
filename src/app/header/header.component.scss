@@ -69,12 +69,12 @@
 }
 
 .froge-mascot:hover .img {
-  width: 120%; /* Vergrößert die Breite um 20% */
-  height: 120%; /* Vergrößert die Höhe um 20% */
+  width: 120%;
+  height: 120%;
 }
 
 .img.explosion {
-  opacity: 0; /* Bild wird unsichtbar */
+  opacity: 0;
 }
 
 @keyframes explode {

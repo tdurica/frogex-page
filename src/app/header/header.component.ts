@@ -18,7 +18,7 @@ export class HeaderComponent implements OnInit {
       box!.classList.add('explosion')
       setTimeout(() => {
         box!.classList.remove('explosion')
-      }, 1000) // Dauer der Animation in Millisekunden
+      }, 1000)
     })
   }
 }

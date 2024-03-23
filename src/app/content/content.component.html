@@ -1,4 +1,9 @@
-<app-froge-trees-card></app-froge-trees-card>
+<ng-container *ngFor="let card of cards">
+  <app-froge-card
+    [number]="card.number"
+    [description]="card.description"
+  ></app-froge-card>
+</ng-container>
 <app-froge-dividends-card></app-froge-dividends-card>
 <app-frogex-info [description]="frogexDescription"> </app-frogex-info>
 <app-foundation [description]="foundationDescription"> </app-foundation>
