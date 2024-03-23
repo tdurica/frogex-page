@@ -1,0 +1,4 @@
+[build]
+  command = "ng build --prod"
+  publish = "dist/froge-landing-page/"
+  environment = { NODE_VERSION = '16' }
