@@ -13,13 +13,10 @@ export class FrogexInfoComponent implements OnInit {
   buyTax: number = 0
 
   ngOnInit (): void {
-    // get the div element
     const card = document.querySelector('.card')
     const addressBox = document.querySelector('.address-box')
 
-    // add a click event listener to the div
     addressBox!.addEventListener('click', () => {
-      // specify the action to take when the div is clicked
       const address: string = '0x5fA54fdDF1870C344DbFaBb37dFab8700Ec0Def1'
       copy(address)
 
@@ -69,7 +66,7 @@ export class FrogexInfoComponent implements OnInit {
     const textarea = document.createElement('textarea')
     textarea.setAttribute('readonly', 'true')
     textarea.setAttribute('contenteditable', 'true')
-    textarea.style.position = 'fixed' // prevent scroll from jumping to the bottom when focus is set.
+    textarea.style.position = 'fixed'
     textarea.value = address
 
     document.body.appendChild(textarea)

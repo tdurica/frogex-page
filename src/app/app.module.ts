@@ -17,7 +17,8 @@ import { FrogeDividendsCardComponent } from './content/common/froge-dividends-ca
 import { HttpClientModule } from '@angular/common/http'
 import { AppConfigService } from 'src/service/app-config.service'
 import { EtherService } from 'src/service/ether.service'
-import { FrogeCardComponent } from './content/common/froge-card/froge-card.component'
+import { FrogeCardComponent } from './content/common/froge-card/froge-card.component';
+import { CustomTitleCasePipe } from './content/common/custom-title-case.pipe'
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { FrogeCardComponent } from './content/common/froge-card/froge-card.compo
     EtherscanButtonComponent,
     RoadmapComponent,
     RoadmapEntryComponent,
-    FoundationComponent
+    FoundationComponent,
+    CustomTitleCasePipe
   ],
   imports: [BrowserModule, HttpClientModule],
   providers: [

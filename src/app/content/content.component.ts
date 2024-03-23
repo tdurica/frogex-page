@@ -18,7 +18,7 @@ export class ContentComponent {
   ]
 
   frogexDescription: string =
-    'FrogeX is a hyper-optimized, managed, ETH reflection smart contract of the ERC20 Token standard. It’s the leader of the ecoDefi space and direct sucessor of the froge token, which was one of the great altcoins in the bullrun 2021.'
+    'FrogeX is a hyper-optimized, managed, ETH reflection smart contract of the ERC-20 Token standard. It’s the leader of the ecoDefi space and direct sucessor of the froge token, which was one of the great altcoins in the bullrun 2021. Customily coded to be one of the most efficient contracts on ERC-20, frogex is nearly as cheap as usdt in transfers.'
 
   foundationDescription: string =
     'Froge Finance is an established charitable foundation based in The Hague, Netherlands. It works directly with other charitable organizations to effectively use the funds generated from FrogeX and other Froge Finance Tokens to save the planet and heal our environment.'
