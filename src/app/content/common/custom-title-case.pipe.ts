@@ -14,6 +14,7 @@ export class CustomTitleCasePipe implements PipeTransform {
       .replaceAll('Erc', 'ERC')
       .replaceAll('Usdt', 'USDT')
       .replaceAll('Ecodefi', 'EcoDefi')
+      .replaceAll('Eth', 'ETH')
     return value
   }
 }
