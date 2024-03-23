@@ -9,7 +9,10 @@ export class CustomTitleCasePipe implements PipeTransform {
   transform (value: any, ...args: any[]): any {
     const property = args[0]
     value = this.angularTitleCase.transform(value)
-    value = value.replaceAll('Frogex', 'FrogeX').replaceAll('Erc', 'ERC')
+    value = value
+      .replaceAll('Frogex', 'FrogeX')
+      .replaceAll('Erc', 'ERC')
+      .replaceAll('Usdt', 'USDT')
     return value
   }
 }
